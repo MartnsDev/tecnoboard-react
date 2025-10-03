@@ -37,7 +37,7 @@ Este projeto foi pensado para praticar conceitos fundamentais do React, como:
 ---
 
 ## 📁 Estrutura do projeto
-
+```
 tecnoBoard/
 ├── public/
 │ └── index.html
@@ -52,10 +52,7 @@ tecnoBoard/
 │ └── cardEvento.css
 ├── package.json
 └── README.md
-
-yaml
-Copiar código
-
+```
 ---
 
 ## ⚡ Como executar o projeto
@@ -64,51 +61,30 @@ Copiar código
 
 ```bash
 git clone https://github.com/seu-usuario/tecnoBoard.git
+```
 Entre na pasta do projeto:
 
-bash
-Copiar código
+```
 cd tecnoBoard
+```
 Instale as dependências:
-
-bash
-Copiar código
+```
 npm install
+```
 Inicie o projeto:
 
-bash
-Copiar código
-npm start
-O projeto será aberto automaticamente no navegador em http://localhost:3000.
+npm run dev
+O projeto será aberto automaticamente no navegador em http://localhost:5173.
 
 📚 Aprendizados
 Durante o desenvolvimento do TecnoBoard, pratiquei e aprendi:
 
-Criação de componentes React reutilizáveis
-
-Comunicação entre componentes via props
-
-Manipulação de estados com useState
-
-Renderização de listas dinamicamente
-
-Estruturação de um projeto React de forma organizada
-
-📌 Próximos passos
-Adicionar funcionalidades de edição e exclusão de eventos
-
-Integrar com uma API para persistência dos dados
-
-Melhorar o design da interface com CSS ou frameworks como Tailwind
+- Criação de componentes React reutilizáveis
+- Comunicação entre componentes via props
+- Manipulação de estados com useState
+- Renderização de listas dinamicamente
+- Estruturação de um projeto React de forma organizada
 
 📝 Licença
 Este projeto está licenciado sob a licença MIT.
 
-yaml
-Copiar código
-
----
-
-Se você quiser, posso criar **uma versão ainda mais visual do README**, com GIF mostrando a aplicação funcionando, badges de aprendizado e destaque das funcionalidades, que fica ótimo para postar no GitHub e LinkedIn.  
-
-Quer que eu faça essa versão?
