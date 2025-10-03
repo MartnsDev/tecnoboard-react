@@ -1,78 +1,114 @@
-![Capa do projeto](capa.png)
+# TecnoBoard
 
-# Tecboard
+![React](https://img.shields.io/badge/React-18.2.0-blue)  
+![License](https://img.shields.io/badge/license-MIT-green)
 
-Seu hub de eventos de tecnologia! Este projeto foi construído com React e tem como objetivo facilitar a criação e visualização de eventos voltados para temas como Front-end, Back-end, Cloud e muito mais.
+## 🚀 Sobre o projeto
 
-## 🔨 Funcionalidades do projeto
+**TecnoBoard** é um projeto de estudo desenvolvido em **React**, criado durante o curso da **Alura**.  
+O objetivo do projeto é gerenciar eventos de diferentes temas, permitindo que o usuário visualize informações como título, data e tema do evento.
 
-- Criação de eventos personalizados com imagem, título, data e tema.
-- Organização dos eventos por tema.
-- Persistência dos dados em memória (estado local do React).
+Este projeto foi pensado para praticar conceitos fundamentais do React, como:
 
-![Screenshot do projeto](screencapture.png)
+- Componentes funcionais
+- Props
+- State (`useState`)
+- Renderização de listas
+- Organização de componentes
 
-## ✔️ Técnicas e tecnologias utilizadas
+---
 
-- **React + Vite**: Estrutura leve para desenvolvimento com React.
-- **useState**: Para gerenciamento do estado local dos eventos.
-- **Componentização**: Separação clara de responsabilidades por componente.
-- **Formulários com `FormData`**: Captura de dados estruturada.
-- **CSS Modules**: Estilos organizados por componente com escopo local.
-- **Google Fonts (Work Sans + Orbitron)**: Tipografia personalizada.
+## 🖥️ Funcionalidades
 
-## 🛠️ Como rodar o projeto
+- Criar eventos com título, data, capa e tema
+- Exibir lista de eventos organizados por tema
+- Estrutura de componentes reutilizáveis
+- Interface simples e intuitiva
 
-1. Clone o repositório:
+---
+
+## 🛠️ Tecnologias utilizadas
+
+- [React](https://reactjs.org/)
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+
+---
+
+## 📁 Estrutura do projeto
+
+tecnoBoard/
+├── public/
+│ └── index.html
+├── src/
+│ ├── components/
+│ │ ├── CardEvento.jsx
+│ │ ├── CampoFormulario.jsx
+│ │ └── FormularioDeEvento.jsx
+│ ├── App.jsx
+│ ├── index.js
+│ └── styles/
+│ └── cardEvento.css
+├── package.json
+└── README.md
+
+yaml
+Copiar código
+
+---
+
+## ⚡ Como executar o projeto
+
+1. **Clone o repositório:**
 
 ```bash
-git clone https://github.com/seu-usuario/tecboard.git
-cd tecboard
-```
+git clone https://github.com/seu-usuario/tecnoBoard.git
+Entre na pasta do projeto:
 
-2. Instale as dependências:
+bash
+Copiar código
+cd tecnoBoard
+Instale as dependências:
 
-```bash
+bash
+Copiar código
 npm install
-```
+Inicie o projeto:
 
-3. Rode o projeto localmente:
+bash
+Copiar código
+npm start
+O projeto será aberto automaticamente no navegador em http://localhost:3000.
 
-```bash
-npm run dev
-```
+📚 Aprendizados
+Durante o desenvolvimento do TecnoBoard, pratiquei e aprendi:
 
-4. Acesse no navegador:
+Criação de componentes React reutilizáveis
 
-```
-http://localhost:5173
-```
+Comunicação entre componentes via props
 
-**Imagens disponíveis:**
+Manipulação de estados com useState
 
-- `imagem_1.png` até `imagem_15.png`
-- `imagem_extra_1.png` até `imagem_extra_15.png`
+Renderização de listas dinamicamente
 
-**Formato de uso direto no projeto:**
+Estruturação de um projeto React de forma organizada
 
-```txt
-https://raw.githubusercontent.com/viniciosneves/tecboard-assets/refs/heads/main/imagem_1.png
-https://raw.githubusercontent.com/viniciosneves/tecboard-assets/refs/heads/main/imagem_extra_9.png
-```
+📌 Próximos passos
+Adicionar funcionalidades de edição e exclusão de eventos
 
-## 📚 Sobre o projeto
+Integrar com uma API para persistência dos dados
 
-Esse projeto foi desenvolvido com fins educacionais para praticar:
+Melhorar o design da interface com CSS ou frameworks como Tailwind
 
-- Componentização no React.
-- JSX.
-- Manipulação de formulários e dados.
-- Estilização com CSS.
-- Uso de props e renderização condicional.
+📝 Licença
+Este projeto está licenciado sob a licença MIT.
 
-Ideal para quem quer dar os primeiros passos em React criando algo visual, interativo e útil.
+yaml
+Copiar código
 
-Se quiser adicionar deploy com Vercel, persistência com LocalStorage ou backend com Firebase, este projeto é uma ótima base para evoluir!
+---
 
-Vida longa e próspera 🖖
+Se você quiser, posso criar **uma versão ainda mais visual do README**, com GIF mostrando a aplicação funcionando, badges de aprendizado e destaque das funcionalidades, que fica ótimo para postar no GitHub e LinkedIn.  
 
+Quer que eu faça essa versão?
