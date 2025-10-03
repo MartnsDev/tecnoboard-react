@@ -1,0 +1,71 @@
+/* Container geral do select + input */
+.lista-suspensa-container {
+  display: flex;
+  flex-direction: column; /* coloca elementos um abaixo do outro */
+  align-items: flex-start; /* alinha à esquerda */
+  gap: 10px; /* espaçamento entre select e input */
+  width: 100%;
+  max-width: 400px;
+  margin: 10px 0;
+}
+
+/* Estilo do select principal */
+.lista-suspensa-form {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background-color: #212121; /* fundo preto */
+  color: #fff; /* texto branco */
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  appearance: none; /* remove seta padrão */
+  cursor: pointer;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Sombra ao focar */
+.lista-suspensa-form:focus {
+  border-color: #00ffcc;
+  box-shadow: 0 0 8px rgba(0, 255, 204, 0.6);
+  outline: none;
+}
+
+/* Grupos de opções (optgroup) */
+.lista-suspensa-form optgroup {
+  font-weight: bold;
+  color: #fff;
+  background-color: #111;
+  padding: 4px;
+}
+
+/* Cada opção */
+.lista-suspensa-form option {
+  background-color: #212121;
+  color: #fff;
+  padding: 8px;
+}
+
+/* Hover nas opções */
+.lista-suspensa-form option:hover {
+  background-color: #212121;
+}
+/* Input que aparece quando escolhe "Outro" */
+.input-outro {
+  width: 94%;
+  padding: 10px 12px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background-color: #212121;
+  color: #fff;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Foco no input */
+.input-outro:focus {
+  border-color: #00ffcc;
+  box-shadow: 0 0 6px rgba(0, 255, 204, 0.5);
+  outline: none;
+}

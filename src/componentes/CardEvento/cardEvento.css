@@ -1,0 +1,89 @@
+/* Container de todos os eventos */
+.todos-eventos {
+  display: flex;
+  flex-direction: column;
+  gap: 32px; /* Espaço entre cada tema */
+  padding: 16px;
+}
+
+/* Seção de cada tema */
+.tema-secao {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Título do tema */
+.titulo-tema {
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-family: "Orbitron", sans-serif;
+  margin: 0;
+}
+
+/* Container de cards de um mesmo tema */
+.eventos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Espaço entre os cards */
+}
+
+/* Card do evento */
+.card-evento {
+  background-color: #212121; /* fundo grafite */
+  display: flex;
+  flex-direction: column;
+  width: 282px; /* largura fixa */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Efeito hover no card */
+.card-evento:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Imagem do card */
+.card-imagem {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+/* Corpo do card */
+.card-conteudo {
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Título do evento */
+.card-conteudo h4 {
+  margin: 0;
+  font-family: "Orbitron", sans-serif;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+/* Tag do tema dentro do card */
+.card-conteudo p:first-of-type {
+  background-color: #4a4949;
+  border-radius: 4px;
+  padding: 6px 8px;
+  display: inline-block;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+/* Data do evento */
+.card-conteudo p:last-of-type {
+  color: #ffffff;
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.85rem;
+}
