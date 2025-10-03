@@ -1,7 +1,7 @@
 # TecnoBoard
 
 ![React](https://img.shields.io/badge/React-18.2.0-blue)  
-![License](https://img.shields.io/badge/license-MIT-green)
+![License](https://github.com/alura-cursos)
 
 ## 🚀 Sobre o projeto
 
