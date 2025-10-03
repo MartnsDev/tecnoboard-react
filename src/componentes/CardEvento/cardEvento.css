@@ -87,3 +87,27 @@
   font-family: "Orbitron", sans-serif;
   font-size: 0.85rem;
 }
+
+.eventos-do-tema {
+  display: flex; /* deixa os cards em linha */
+  flex-wrap: wrap; /* quebra para a próxima linha se não couber */
+  gap: 20px; /* espaçamento entre os cards */
+  margin-top: 10px;
+  justify-content: left; /* centraliza os cards horizontalmente */
+}
+
+.card-evento {
+  width: 250px; /* largura fixa para cada card */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-imagem {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-conteudo {
+  padding: 10px;
+}
