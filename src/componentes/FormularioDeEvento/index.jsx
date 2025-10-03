@@ -9,33 +9,36 @@ import { ListaSuspensa } from "../ListaSuspensa";
 
 export function FormularioDeEvento({ adicionarEvento = () => {} }) {
   const [valorSelecionado, setValorSelecionado] = useState("");
-  const [mensagem, setMensagem] = useState(""); // estado para feedback
+  const [outroValor, setOutroValor] = useState("");
+  const [mensagem, setMensagem] = useState("");
 
   function aoFormSubmetido(event) {
     event.preventDefault();
 
-    const formData = event.target;
-    const novoEvento = {
-      id: Date.now(),
-      titulo: formData.nomeEvento.value,
-      capa: formData.imagemEvento.value,
-      descricao: formData.descricaoEvento.value,
-      data: formData.dataEvento.value,
-      tema: valorSelecionado,
-    };
+    const formData = new FormData(event.target);
 
-    try {
-      adicionarEvento(novoEvento);
-      setMensagem("Evento criado com sucesso! ✅");
-      formData.reset();
-      setValorSelecionado("");
-    } catch (erro) {
-      console.error("Erro ao criar evento:", erro);
-      setMensagem("Erro ao criar evento. ❌");
+    // Escolha o tema correto (Outro tema ou selecionado)
+    const temaEscolhido =
+      valorSelecionado === "outro" ? outroValor : valorSelecionado;
+
+    if (!temaEscolhido) {
+      alert("Selecione um tema válido!");
+      return;
     }
 
-    // Limpa a mensagem após 3 segundos
-    setTimeout(() => setMensagem(""), 3000);
+    const novoEvento = {
+      capa: formData.get("imagemEvento"),
+      tema: temaEscolhido,
+      data: formData.get("dataEvento"),
+      titulo: formData.get("nomeEvento"),
+      descricao: formData.get("descricaoEvento"),
+    };
+
+    adicionarEvento(novoEvento);
+    setMensagem("Evento criado com sucesso!");
+    event.target.reset();
+    setValorSelecionado("");
+    setOutroValor("");
   }
 
   return (
@@ -45,12 +48,24 @@ export function FormularioDeEvento({ adicionarEvento = () => {} }) {
       <div className="campos">
         <CampoDeFormulario>
           <Label htmlFor="nomeEvento">Qual o nome do evento?</Label>
-          <CampoDeEntrada type="text" id="nomeEvento" name="nomeEvento" />
+          <CampoDeEntrada
+            type="text"
+            id="nomeEvento"
+            name="nomeEvento"
+            placeholder="Ex: Summer Dev"
+            required
+          />
         </CampoDeFormulario>
 
         <CampoDeFormulario>
           <Label htmlFor="imagemEvento">URL da imagem do evento</Label>
-          <CampoDeEntrada type="text" id="imagemEvento" name="imagemEvento" />
+          <CampoDeEntrada
+            type="text"
+            id="imagemEvento"
+            name="imagemEvento"
+            placeholder="Cole aqui a URL da imagem do evento"
+            required
+          />
         </CampoDeFormulario>
 
         <CampoDeFormulario>
@@ -59,12 +74,19 @@ export function FormularioDeEvento({ adicionarEvento = () => {} }) {
             type="text"
             id="descricaoEvento"
             name="descricaoEvento"
+            placeholder="Sobre o que é o evento"
+            required
           />
         </CampoDeFormulario>
 
         <CampoDeFormulario>
           <Label htmlFor="dataEvento">Data do evento</Label>
-          <CampoDeEntrada type="date" id="dataEvento" name="dataEvento" />
+          <CampoDeEntrada
+            type="date"
+            id="dataEvento"
+            name="dataEvento"
+            required
+          />
         </CampoDeFormulario>
 
         <CampoDeFormulario>
@@ -72,6 +94,8 @@ export function FormularioDeEvento({ adicionarEvento = () => {} }) {
           <ListaSuspensa
             valorSelecionado={valorSelecionado}
             setValorSelecionado={setValorSelecionado}
+            outroValor={outroValor}
+            setOutroValor={setOutroValor}
           />
         </CampoDeFormulario>
       </div>
