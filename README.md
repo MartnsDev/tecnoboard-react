@@ -3,6 +3,8 @@
 [![React](https://img.shields.io/badge/React-18.2.0-blue)](https://reactjs.org/)
 [![License](https://img.shields.io/badge/license-ALURA-blue)](https://github.com/alura-cursos)
 
+![Capa Tecnoboard](https://raw.githubusercontent.com/MartnsDev/tecnoboard-react/2862a91555ce24333080cfaaa9d5846314dd2b7e/capa-tecnoboard.png)
+
 
 ## 🚀 Sobre o projeto
 
