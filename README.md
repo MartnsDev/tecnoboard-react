@@ -86,6 +86,6 @@ Durante o desenvolvimento do TecnoBoard, pratiquei e aprendi:
 - Renderização de listas dinamicamente
 - Estruturação de um projeto React de forma organizada
 
-📝 Licença
+📝 Licença <br>
 [![License](https://img.shields.io/badge/license-ALURA-blue)](https://github.com/alura-cursos).
 
