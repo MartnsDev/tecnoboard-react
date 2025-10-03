@@ -87,5 +87,5 @@ Durante o desenvolvimento do TecnoBoard, pratiquei e aprendi:
 - Estruturação de um projeto React de forma organizada
 
 📝 Licença
-Este projeto está licenciado sob a licença MIT.
+[![License](https://img.shields.io/badge/license-ALURA-blue)](https://github.com/alura-cursos).
 
